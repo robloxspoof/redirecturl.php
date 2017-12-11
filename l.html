@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>MutualBTC</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/new-age.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">MutualBTC</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+
+      </div>
+    </nav>
+
+    <header class="masthead">
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-lg-6 my-auto">
+            <div class="header-content mx-auto">
+              <h1 class="mb-5">Input Some Funds</h1>
+
+              <a onclick="d()" class="btn btn-outline btn-xl">Fund</a><br><br><br><br>
+              <!-- <button type="button" class="btn btn-outline btn-xl" data-toggle="myModal" data-target="#myModal">
+                Fund
+              </button><br><br><br><br> -->
+
+
+              <h1 class="mb-5">Cash Out</h1>
+
+              <a onclick="m()" class="btn btn-outline btn-xl">Cash Out</a><br><br><br><br>
+
+
+
+
+            </div>
+          </div>
+          <div class="col-lg-6 my-auto">
+            <div class="header-content mx-auto">
+              <h1 class="mb-5">Balance: 0.000 BTC</h1><br><br><br><br>
+
+              <h1 class="mb-5">Lend To The Bot</h1>
+
+              <!-- <a onclick="m()" class="btn btn-outline btn-xl">Lend</a><br><br><br><br> -->
+              <a class="btn btn-outline btn-xl" onclick="d()">Lend</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="modalcontain">
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Fund Account</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Send BTC to this address. This address is locked to your account.</p>
+        <p>1EkwnV5A1pui3Y2tUNmDP4xKKtevpNTJXR</p><br><br>
+        <h3>Recieved BTC: 0.000 <img src="https://loading.io/spinners/gears/lg.dual-gear-loading-icon.gif" alt="" style="padding: 0px; margin: 0px; width: 50px; height:50px;"></h3>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline btn-xl" data-dismiss="modal">Close</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    <footer>
+      <div class="container">
+        <p>&copy; 2017 MutualBTC. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js" />
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/new-age.min.js"></script>
+
+
+    <script>
+      function m() {
+        alert("You don't have any funds")
+      }
+      function d() {
+        $("#myModal").modal();
+      }
+    </script>
+  </body>
+
+</html>
